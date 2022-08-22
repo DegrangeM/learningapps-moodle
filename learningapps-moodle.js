@@ -12,7 +12,7 @@ if (typeof window.LearningAppsMoodleElements === 'undefined') {
         if (datas[3]) { // AppChecked|Name|Time|S;c;o;r;e|UserId?
           const scores = datas[3].split(';')
           const maxScore = scores.length
-          const score = datas[3].filter(x => x == '1').length
+          const score = scores.filter(x => x == '1').length
           const moodleScore = Math.round(score / maxScore * 10) * 10
           if (iframe.parentNode.parentNode.querySelector('[name$="_answer"]').value != '') {
             alert('Vous aviez déjà obtenu une note pour cet exercice, la note n\'a donc pas été mise à jour.');
