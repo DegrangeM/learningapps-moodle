@@ -33,7 +33,7 @@ if (typeof window.LearningAppsMoodleElements === 'undefined') {
     connectedCallback() {
       let APP_ID
       try {
-        APP_ID = parseInt(this.getAttribute('app'))
+        APP_ID = this.getAttribute('app')
       } catch (e) {
         PAGE_URL = 'data:text,' + e
       }
