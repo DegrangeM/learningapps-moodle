@@ -84,19 +84,8 @@ if (typeof window.LearningAppsMoodleElements === 'undefined') {
         if (iMoodle > 0) {
           alert('Attention, il y a déjà une intégration de LearningApps sur la page')
         }
-        const fullscreenIcon = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAQklEQVRYw+3XwQkAIAzF0Hz337kuIEgPomByFeyDXjRA0Sub89Z9g8sJyGJnOTyzXIEAAU8BzMx8DwgQICD+Db8HTFAkCCnkhrVLAAAAAElFTkSuQmCC';
-        const fullscreenElement = document.createElement('img');
-        fullscreenElement.setAttribute('src', fullscreenIcon);
-        fullscreenElement.setAttribute('style', 'position: absolute;top: 25px;right: 45px;cursor: pointer;');
-        fullscreenElement.addEventListener('click', () => {
-          if (!document.fullscreenElement) {
-            this.requestFullscreen();
-          } else {
-            document.exitFullscreen();
-          }
-        });
+        
         shadow.appendChild(iframe)
-        shadow.appendChild(fullscreenElement)
       }
 
     }
