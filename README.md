@@ -1,13 +1,16 @@
-# Wims-Moodle
+# LearningApps-Moodle
 
-Wims-Moodle est une passerelle pour inclure des exercices Wims directement sur moodle dans un Test (quiz).
-Les élèves n'ont pas besoin d'avoir un compte Wims et les résultats obtenus sont directement remonté en tant que résultat à la question du quiz.
+**Ce projet n'est pas un projet officiel de learningapps. Il s'agit d'un projet indépendant.**
 
-![image](https://user-images.githubusercontent.com/53106394/185902018-49f9a38a-6e9e-480a-9736-d563f76778ea.png)
+Il est actuellement possible d'intégrer des exercices LearningApps dans Moodle via les packages SCORM.
+Cependant il n'était pas possible d'intégrer ces exercices dans des Tests (quiz) afin de par exemple mélanger ces exercices à d'autres plus classiques.
+Cet outil permet de corriger ce défaut en permettant de générer des fichiers GIFT à importer dans la banque de question à partir d'exercices LearningApps.
+
+![image](https://user-images.githubusercontent.com/53106394/186040982-9857150a-7d03-453d-8892-615fc4b1e211.png)
 
 ## Génération du fichier GIFT
 
-Rendez-vous sur https://degrangem.github.io/wims-moodle/ et remplissez les champs nécéssaires pour obtenir le fichier GIFT.
+Rendez-vous sur https://degrangem.github.io/learningapps-moodle/ et remplissez les champs nécéssaires pour obtenir le fichier GIFT.
 Suivez ensuite les instructions ci-dessous pour l'importer.
 
 ## Import de la question dans la banque de question
@@ -36,12 +39,12 @@ Il ne vous reste plus qu'à cocher la question précédemment importée, puis à
 
 ## Quelques remarques sur la configuration du test
 
-Il faut obligatoirement ne pas afficher plus d'un seul exercice wims à la fois dans le test moodle, il est donc conseillé de régler le test sur "1 question par page".
+Il faut obligatoirement ne pas afficher plus d'un seul exercice learningapps à la fois dans le test moodle, il est donc conseillé de régler le test sur "1 question par page".
 
 Il est conseillé de configurer le test sur "Feedback à postériori". Dans le cas contraire la validation d'un exercice entraînera un rechargement de la page qui fera perdre le travail en cours sur un exercice de la même page.
 
 ## Remarque importante sur la triche
 
-Les élèves ont la possibilité de tricher en actualisant la page pour obtenir une nouvelle serie d'exercice (y compris après avoir obtenu un score).
+Les élèves ont la possibilité de tricher en actualisant la page pour recommencer.
 Les élèves doués en informatique ont aussi la possibilité de tricher en se donnant tous les points à l'exercice sans l'effectuer.
 Il est possible de réduire ces risques là en utilisant l'intégration de SafeExamBrowser (voir documentation Moodle).
