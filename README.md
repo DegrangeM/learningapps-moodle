@@ -1,5 +1,7 @@
 # LearningApps-Moodle
 
+**Ce projet n'est pas un projet officiel de learningapps. Il s'agit d'un projet indépendant.**
+
 Il est actuellement possible d'intégrer des exercices LearningApps dans Moodle via les packages SCORM.
 Cependant il n'était pas possible d'intégrer ces exercices dans des Tests (quiz) afin de par exemple mélanger ces exercices à d'autres plus classiques.
 Cet outil permet de corriger ce défaut en permettant de générer des fichiers GIFT à importer dans la banque de question à partir d'exercices LearningApps.
